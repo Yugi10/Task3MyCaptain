@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 import operator
 
 str = input("Please enter your string :\n")
@@ -25,9 +19,6 @@ for i in Ascending:
 print ("\nFinal output in Descending order of frequency of elements is :\n")
 for i in Descending:
     print (f"{i[0]}={i[1]}")
-
-
-# In[ ]:
 
 
 

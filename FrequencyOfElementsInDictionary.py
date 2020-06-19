@@ -1,24 +1,28 @@
 import operator
 
-str = input("Please enter your string :\n")
-output = {}
+def arrange ():
 
-for i in str:
-    output [i] = str.count(i)
+    str = input("Please enter your string :\n")
+    output = {}
 
-Ascending = sorted (output.items(), key = operator.itemgetter(1))
-Descending = sorted (output.items(), key = operator.itemgetter(1), reverse = True)
+    for i in str:
+        output [i] = str.count(i)
 
-print ("\nThe given string as dictionatry of each element and it's frequency in Ascending order :\n", Ascending)
-print ("\nThe given string as dictionatry of each element and it's frequency in Descending order :\n", Descending)
+    Ascending = sorted (output.items(), key = operator.itemgetter(1))
+    Descending = sorted (output.items(), key = operator.itemgetter(1), reverse = True)
 
-print ("\nFinal output in Ascending order of frequency of elements is :\n")
-for i in Ascending:
-    print (f"{i[0]}={i[1]}")
-    
-print ("\nFinal output in Descending order of frequency of elements is :\n")
-for i in Descending:
-    print (f"{i[0]}={i[1]}")
+    print ("\nThe given string as dictionatry of each element and it's frequency in Ascending order :\n", Ascending)
+    print ("\nThe given string as dictionatry of each element and it's frequency in Descending order :\n", Descending)
+
+    print ("\nFinal output in Ascending order of frequency of elements is :\n")
+    for i in Ascending:
+        print (f"{i[0]}={i[1]}")
+
+    print ("\nFinal output in Descending order of frequency of elements is :\n")
+    for i in Descending:
+        print (f"{i[0]}={i[1]}")
+
+arrange ()
     
 """
 OUTPUT :
